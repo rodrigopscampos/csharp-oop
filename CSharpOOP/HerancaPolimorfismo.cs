@@ -12,6 +12,23 @@ namespace CSharpOOP.HerancaPolimorfismo
     public abstract class Figura2D
     {
         public abstract float CalcularArea();
+
+        public static Figura2D Maior(params Figura2D[] figuras)
+        {
+            var maior = figuras[0];
+            var area = maior.CalcularArea();
+
+            foreach (var item in figuras)
+            {
+                if (item.CalcularArea() > area)
+                {
+                    maior = item;
+                    area = maior.CalcularArea();
+                }
+            }
+
+            return maior;
+        }
     }
 
     public abstract class Figura2DBaseAltura : Figura2D
