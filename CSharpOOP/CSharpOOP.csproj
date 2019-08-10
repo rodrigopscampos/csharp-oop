@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HerancaPolimorfismo.cs" />
     <Compile Include="Lista1.cs" />
     <Compile Include="Lista2.cs" />
     <Compile Include="Program.cs" />

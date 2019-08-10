@@ -81,9 +81,13 @@ namespace CSharpOOP.Lista2
         private int _posicaoArray = 0;
         private bool _logLigado;
 
-        public ArrayElastico(int tamInicial = 10, bool logLigado = false)
+        public IEnumerable<int> GetArray()
         {
-            _array = new int[tamInicial];
+            return _array;
+        }
+
+        public ArrayElastico(int tamInicial = 10, bool logLigado = false)
+        {   _array = new int[tamInicial];
             _logLigado = logLigado;
         }
 
@@ -109,6 +113,7 @@ namespace CSharpOOP.Lista2
                 novoArray[i] = _array[i];
             }
 
+            
             _array = novoArray;
 
             if(_logLigado)
