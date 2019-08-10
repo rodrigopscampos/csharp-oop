@@ -29,6 +29,14 @@ namespace CSharpOOP.HerancaPolimorfismo
 
             return maior;
         }
+
+        public override string ToString()
+        {
+            var area = CalcularArea();
+            var nome = GetType().Name;
+
+            return $"Figura: {nome}. Area: {area}";
+        }
     }
 
     public abstract class Figura2DBaseAltura : Figura2D
@@ -81,7 +89,8 @@ namespace CSharpOOP.HerancaPolimorfismo
         public override float CalcularArea()
         {
             //formula: A = PI * R * R
-            return 3.14f * Raio * Raio;
+            
+            return (float)Math.PI * Raio * Raio;
         }
     }
 }

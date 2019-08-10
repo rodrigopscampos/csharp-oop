@@ -16,6 +16,9 @@ namespace CSharpOOP
             var triangulo = new Triangulo(2, 5);
 
             var maior = Figura2D.Maior(circulo, triangulo);
+
+            Console.WriteLine(maior);
+            Console.ReadLine();
         }
     }
 }
