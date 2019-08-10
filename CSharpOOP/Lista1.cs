@@ -30,8 +30,14 @@ namespace CSharpOOP.Lista1
 
     public class Pessoa
     {
-        public string Nome;
-        public int Idade;
+        public string Nome { get; }
+        public int Idade { get; }
+
+        public Pessoa(string nome, int idade)
+        {
+            Nome = nome;
+            Idade = idade;
+        }
 
         public void Comprimentar()
         {
