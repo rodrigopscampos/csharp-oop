@@ -19,6 +19,22 @@ namespace CSharpOOP
 
             Console.WriteLine(maior);
             Console.ReadLine();
+
+            int vogais;
+            int consoantes;
+
+            CategorizaTexto("Olá mundo", out vogais, out consoantes);
+        }
+
+        static void CategorizaTexto(string texto, out int qtVogais, out int qtConsoantes)
+        {
+            qtConsoantes = 0;
+            qtVogais = 0;
+        }
+
+        static void M2(out int n)
+        {
+            n = 0;
         }
     }
 }
